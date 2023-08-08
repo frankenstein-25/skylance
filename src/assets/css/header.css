@@ -1,0 +1,267 @@
+.header_wrapper {
+  position: fixed;
+  left: 50%;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1.5rem;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.header_wrapper .logo_wrapper {
+  width: 100%;
+  max-width: 265.5px;
+}
+
+.header_wrapper .links_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header_wrapper .links_wrapper .links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header_wrapper .links_wrapper .links .link_wrapper {
+  list-style: none;
+}
+
+.header_wrapper .links_wrapper .links .link_wrapper .link {
+  display: block;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(4 18 45 / var(--tw-text-opacity));
+  text-decoration-line: none;
+  font-size: 20px;
+  line-height: 30px;
+  transition: all ease 0.25s;
+}
+
+.header_wrapper .links_wrapper .links .link_wrapper .link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(43 99 195 / var(--tw-text-opacity));
+}
+
+.header_wrapper .toggle_header_btn_wrapper {
+  display: none;
+  border-radius: 0.5rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header_wrapper .toggle_header_btn_wrapper .toggle_header_btn {
+  position: relative;
+  width: 1.75rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 18 45 / var(--tw-bg-opacity));
+  height: 3px;
+}
+
+.header_wrapper .toggle_header_btn_wrapper .toggle_header_btn:before {
+  position: absolute;
+  left: 0px;
+  top: -0.625rem;
+  width: 100%;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 18 45 / var(--tw-bg-opacity));
+  height: 3px;
+  content: "";
+}
+
+.header_wrapper .toggle_header_btn_wrapper .toggle_header_btn:after {
+  position: absolute;
+  left: 0px;
+  bottom: -0.625rem;
+  width: 100%;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 18 45 / var(--tw-bg-opacity));
+  height: 3px;
+  content: "";
+}
+
+.responsive_links_wrapper {
+  display: none;
+}
+
+.active_header {
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .header_wrapper .links_wrapper .links .link_wrapper .link {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header_wrapper .links_wrapper {
+    display: none;
+  }
+
+  .header_wrapper .toggle_header_btn_wrapper {
+    display: block;
+  }
+
+  .responsive_links_wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    --tw-bg-opacity: 1;
+    background-color: rgb(43 99 195 / var(--tw-bg-opacity));
+    padding: 1.5rem;
+    min-height: 100vh;
+    transform: translateY(-100%);
+    transition: ease-in-out all 0.35s;
+    z-index: 2;
+  }
+
+  .responsive_links_wrapper .heading_wrapper .white_logo_wrapper {
+    width: 265.5px;
+  }
+
+  .responsive_links_wrapper .links {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  .responsive_links_wrapper .links .link_wrapper {
+    list-style: none;
+  }
+
+  .responsive_links_wrapper .links .link_wrapper .link {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    text-decoration-line: none;
+    font-size: 28px;
+  }
+
+  .responsive_links_wrapper .links .link_wrapper .link:hover {
+    --tw-text-opacity: 1;
+    color: rgb(4 18 45 / var(--tw-text-opacity));
+  }
+
+  .active_header .responsive_links_wrapper {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .active_header .responsive_links_wrapper .heading_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .active_header .responsive_links_wrapper .heading_wrapper .res_toggle_header_btn_wrapper .res_toggle_header_btn {
+    position: relative;
+    display: block;
+    height: 0px;
+    width: 1rem;
+    border-radius: 9999px;
+    padding: 1rem;
+  }
+
+  .active_header .responsive_links_wrapper .heading_wrapper .res_toggle_header_btn_wrapper .res_toggle_header_btn:before {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    transform: rotate(45deg) translateY(-50%);
+    content: "";
+    height: 3px;
+  }
+
+  .active_header .responsive_links_wrapper .heading_wrapper .res_toggle_header_btn_wrapper .res_toggle_header_btn:after {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    border-radius: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    transform: rotate(-45deg) translateY(-50%);
+    content: "";
+    height: 3px;
+  }
+
+  .active_header .responsive_links_wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .header_wrapper .logo_wrapper {
+    max-width: 180px;
+  }
+
+  .header_wrapper .toggle_header_btn_wrapper {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .header_wrapper .toggle_header_btn_wrapper .toggle_header_btn {
+    height: 0.125rem;
+    width: 22px;
+  }
+
+  .header_wrapper .toggle_header_btn_wrapper .toggle_header_btn:before {
+    top: -0.5rem;
+    height: 0.125rem;
+  }
+
+  .header_wrapper .toggle_header_btn_wrapper .toggle_header_btn:after {
+    bottom: -0.5rem;
+    height: 0.125rem;
+  }
+
+  .responsive_links_wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .responsive_links_wrapper .heading_wrapper .white_logo_wrapper {
+    width: 180px;
+  }
+
+  .responsive_links_wrapper .links {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    gap: 2rem;
+  }
+
+  .responsive_links_wrapper .links .link_wrapper .link {
+    font-size: 24px;
+  }
+
+  .active_header .responsive_links_wrapper .heading_wrapper .res_toggle_header_btn_wrapper .res_toggle_header_btn:before {
+    height: 2px;
+  }
+
+  .active_header .responsive_links_wrapper .heading_wrapper .res_toggle_header_btn_wrapper .res_toggle_header_btn:after {
+    height: 2px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

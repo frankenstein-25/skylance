@@ -1,0 +1,205 @@
+.header_wrapper {
+  @apply p-6 flex justify-between items-center fixed left-1/2 gap-12 top-0;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  .logo_wrapper {
+    @apply w-full;
+    max-width: 265.5px;
+  }
+
+  .links_wrapper {
+    @apply flex items-center gap-10;
+
+    .links {
+      @apply flex items-center gap-10;
+      .link_wrapper {
+        list-style: none;
+
+        .link {
+          @apply font-medium text-secondary no-underline block;
+          font-size: 20px;
+          line-height: 30px;
+          transition: all ease 0.25s;
+
+          &:hover {
+            @apply text-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .toggle_header_btn_wrapper {
+    @apply hidden px-2.5 py-6 rounded-lg ;
+    .toggle_header_btn {
+      @apply relative bg-secondary rounded-full w-7;
+      height: 3px;
+
+      &:before {
+        @apply absolute w-full bg-secondary rounded-full left-0 -top-2.5;
+        height: 3px;
+        content: "";
+      }
+
+      &:after {
+        @apply absolute w-full bg-secondary rounded-full left-0 -bottom-2.5;
+        height: 3px;
+        content: "";
+      }
+    }
+  }
+}
+
+.responsive_links_wrapper {
+  @apply hidden;
+}
+
+.active_header {
+  @apply overflow-hidden;
+}
+
+@media (max-width: 1200px) {
+  .header_wrapper {
+    .links_wrapper {
+      .links {
+        .link_wrapper {
+
+          .link {
+            font-size: 18px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header_wrapper {
+    .links_wrapper {
+      @apply hidden
+    }
+
+    .toggle_header_btn_wrapper {
+      @apply block
+    }
+  }
+  .responsive_links_wrapper {
+    @apply fixed block p-6 w-full top-0 left-0 bottom-0  bg-primary overflow-scroll;
+    min-height: 100vh;
+    transform: translateY(-100%);
+    transition: ease-in-out all 0.35s;
+    z-index: 2;
+
+    .heading_wrapper {
+      .white_logo_wrapper {
+        width: 265.5px;
+      }
+    }
+
+    .links {
+      @apply flex-col gap-10 my-16 flex justify-center items-center;
+      .link_wrapper {
+        list-style: none;
+
+        .link {
+          @apply text-white no-underline;
+          font-size: 28px;
+
+          &:hover {
+            @apply text-secondary
+          }
+        }
+      }
+    }
+  }
+  .active_header {
+    .responsive_links_wrapper {
+      @apply translate-y-0;
+      .heading_wrapper {
+        @apply flex items-center justify-between;
+        .res_toggle_header_btn_wrapper {
+          .res_toggle_header_btn {
+            @apply w-4 relative rounded-full block h-0 p-4;
+            &:before {
+              @apply absolute  bg-white w-full top-1/2 left-0;
+              transform: rotate(45deg) translateY(-50%);
+              content: "";
+              height: 3px;
+            }
+
+            &:after {
+              @apply absolute  bg-white w-full top-1/2 left-0 rounded-lg;
+              transform: rotate(-45deg) translateY(-50%);
+              content: "";
+              height: 3px;
+            }
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        @apply hidden
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header_wrapper {
+    .logo_wrapper {
+      max-width: 180px;
+    }
+
+    .toggle_header_btn_wrapper {
+      @apply py-5;
+      .toggle_header_btn {
+        @apply h-0.5;
+        width: 22px;
+
+        &:before {
+          @apply h-0.5 -top-2;
+        }
+
+        &:after {
+          @apply h-0.5 -bottom-2;
+        }
+      }
+    }
+  }
+  .responsive_links_wrapper {
+    @apply px-2;
+    .heading_wrapper {
+      .white_logo_wrapper {
+        width: 180px;
+      }
+    }
+
+    .links {
+      @apply gap-8 my-10;
+      .link_wrapper {
+        .link {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .active_header {
+    .responsive_links_wrapper {
+      .heading_wrapper {
+        .res_toggle_header_btn_wrapper {
+          .res_toggle_header_btn {
+            &:before {
+              height: 2px;
+            }
+
+            &:after {
+              height: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
