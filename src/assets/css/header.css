@@ -1,14 +1,23 @@
-.header_wrapper {
+#header {
+  margin-bottom: 108px;
+}
+
+.header_container {
   position: fixed;
-  left: 50%;
   top: 0px;
+  height: auto;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  z-index: 1;
+}
+
+.header_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
   padding: 1.5rem;
-  transform: translateX(-50%);
-  z-index: 1;
 }
 
 .header_wrapper .logo_wrapper {
@@ -212,6 +221,10 @@
 }
 
 @media (max-width: 576px) {
+  #header {
+    margin-bottom: 90px;
+  }
+
   .header_wrapper .logo_wrapper {
     max-width: 180px;
   }
