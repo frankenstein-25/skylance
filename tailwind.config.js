@@ -10,7 +10,14 @@ module.exports = {
                 'secondary': {
                     DEFAULT: '#04122d',
                 },
-                "dark": "#160E08"
+                "dark": {
+                    DEFAULT: "#4A5168",
+                    2: '#172138'
+                },
+                "light":{
+                    DEFAULT:"#c381db0f",
+
+                }
             },
         },
     },

@@ -1,286 +1,177 @@
 #footer {
   background: linear-gradient(112.77deg, rgba(195, 129, 219, 0.06) 0%, rgba(78, 146, 249, 0.06) 100%);
 }
-
 #footer .footer_wrapper {
   border-bottom: 1px solid;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-color: rgb(74 81 104 / var(--tw-border-opacity));
-  --tw-border-opacity: 0.4;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  @apply grid grid-cols-3 py-10 border-dark border-opacity-40;
 }
-
 #footer .footer_wrapper .logo_add_wrapper .logo_wrapper {
   max-width: 265.5px;
-  margin-bottom: 1.5rem;
+  @apply mb-6;
 }
-
 #footer .footer_wrapper .logo_add_wrapper .add_wrapper {
-  color: rgb(74 81 104 / var(--tw-text-opacity));
-  --tw-text-opacity: 0.8;
+  @apply text-dark text-opacity-80;
   font-size: 16px;
   line-height: 22.4px;
   font-family: "Archivo", sans-serif;
   max-width: 345px;
 }
-
 #footer .footer_wrapper .footer_links_wrapper {
-  grid-column: span 2 / span 2;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
+  @apply col-span-2 flex justify-between gap-8;
 }
-
 #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .footer_title {
-  margin-bottom: 2.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(23 33 56 / var(--tw-text-opacity));
+  @apply font-semibold text-dark-2 uppercase mb-10;
   line-height: 24px;
 }
-
 #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  @apply flex flex-col gap-4;
   list-style: none;
 }
-
 #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  @apply flex items-center gap-4;
 }
-
 #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper .link {
-  --tw-text-opacity: 1;
-  color: rgb(74 81 104 / var(--tw-text-opacity));
-  text-decoration-line: none;
+  @apply no-underline text-dark;
   font-size: 16px;
   line-height: 1;
   font-family: "Archivo", sans-serif;
 }
-
 #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper .social_icon {
-  height: 1.5rem;
-  width: 1.5rem;
+  @apply w-6 h-6;
 }
-
 #footer .copy_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  @apply flex justify-between items-center gap-20 py-6;
 }
-
 #footer .copy_wrapper .social_wrapper {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  @apply flex gap-4 items-center;
 }
-
 #footer .copy_wrapper .social_wrapper .social_icon {
-  height: 1.5rem;
-  width: 1.5rem;
+  @apply w-6 h-6;
 }
-
 #footer .copy_wrapper .copy_msg {
-  --tw-text-opacity: 1;
-  color: rgb(74 81 104 / var(--tw-text-opacity));
+  @apply text-dark;
   font-size: 16px;
   line-height: 1;
 }
 
 @media (max-width: 1200px) {
   #footer .footer_wrapper {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    @apply grid-cols-5;
   }
-
   #footer .footer_wrapper .logo_add_wrapper {
-    grid-column: span 2 / span 2;
+    @apply col-span-2;
   }
-
   #footer .footer_wrapper .logo_add_wrapper .logo_wrapper {
     max-width: 220px;
   }
-
   #footer .footer_wrapper .logo_add_wrapper .add_wrapper {
     max-width: 326px;
   }
-
   #footer .footer_wrapper .footer_links_wrapper {
-    grid-column: span 3 / span 3;
+    @apply col-span-3;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .footer_title {
-    margin-bottom: 2rem;
+    @apply mb-8;
   }
-
   #footer .copy_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    @apply flex justify-between items-center gap-20 py-6;
   }
-
   #footer .copy_wrapper .social_wrapper {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    @apply flex gap-4 items-center;
   }
-
   #footer .copy_wrapper .social_wrapper .social_icon {
-    height: 1.5rem;
-    width: 1.5rem;
+    @apply w-6 h-6;
   }
-
   #footer .copy_wrapper .copy_msg {
-    --tw-text-opacity: 1;
-    color: rgb(74 81 104 / var(--tw-text-opacity));
+    @apply text-dark;
     font-size: 16px;
     line-height: 1;
   }
 }
-
 @media (max-width: 992px) {
   #footer .footer_wrapper .logo_add_wrapper .logo_wrapper {
     max-width: 200px;
   }
-
   #footer .footer_wrapper .logo_add_wrapper .add_wrapper {
     font-size: 14px;
     line-height: 20px;
     max-width: 251px;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper {
-    gap: 0.75rem;
+    @apply gap-3;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper .link {
     font-size: 14px;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper .social_icon {
-    height: 1.25rem;
-    width: 1.25rem;
+    @apply w-5 h-5;
   }
-
   #footer .copy_wrapper .social_wrapper .social_icon {
-    height: 1.25rem;
-    width: 1.25rem;
+    @apply w-5 h-5;
   }
-
   #footer .copy_wrapper .copy_msg {
     font-size: 14px;
   }
 }
-
 @media (max-width: 768px) {
   #footer {
     background: linear-gradient(112.77deg, rgba(195, 129, 219, 0.06) 0%, rgba(78, 146, 249, 0.06) 100%);
   }
-
   #footer .footer_wrapper {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @apply grid-cols-1;
   }
-
   #footer .footer_wrapper .logo_add_wrapper {
-    margin-bottom: 2.5rem;
+    @apply mb-10;
   }
-
   #footer .footer_wrapper .logo_add_wrapper .add_wrapper {
     max-width: 345px;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .footer_title {
-    margin-bottom: 1.5rem;
+    @apply mb-6;
     line-height: 24px;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper {
-    gap: 0.875rem;
+    @apply gap-3.5;
   }
-
   #footer .copy_wrapper {
-    gap: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    @apply py-4 gap-12;
   }
-
   #footer .copy_wrapper .social_wrapper {
-    display: flex;
-    align-items: center;
-    gap: 0.875rem;
+    @apply flex gap-3.5 items-center;
   }
 }
-
 @media (max-width: 576px) {
   #footer .footer_wrapper .logo_add_wrapper {
-    margin-top: 2rem;
-    margin-bottom: 0px;
-    text-align: center;
+    @apply text-center mt-8 mb-0;
   }
-
   #footer .footer_wrapper .logo_add_wrapper .logo_wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1.5rem;
+    @apply mb-6 mx-auto;
   }
-
   #footer .footer_wrapper .logo_add_wrapper .add_wrapper {
-    margin-left: auto;
-    margin-right: auto;
+    @apply mx-auto;
   }
-
   #footer .footer_wrapper .footer_links_wrapper {
-    order: -9999;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    @apply flex-col order-first items-center gap-6;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper {
     border-bottom: 1px solid;
-    width: 66.666667%;
-    border-width: 1px;
-    border-color: rgb(74 81 104 / var(--tw-border-opacity));
-    --tw-border-opacity: 0.1;
-    padding-bottom: 1.5rem;
+    @apply border border-dark w-2/3 pb-6 border-opacity-10;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .footer_title {
-    margin-bottom: 1.5rem;
-    text-align: center;
+    @apply text-center mb-6;
     font-size: 16px;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper {
-    justify-content: center;
-    gap: 0.5rem;
+    @apply gap-2 justify-center;
   }
-
   #footer .footer_wrapper .footer_links_wrapper .common_links_wrapper .links_wrapper .link_wrapper .link {
-    text-align: center;
-    --tw-text-opacity: 1;
-    color: rgb(74 81 104 / var(--tw-text-opacity));
-    text-decoration-line: none;
+    @apply no-underline text-dark text-center;
   }
-
   #footer .copy_wrapper {
-    flex-direction: column;
-    gap: 1rem;
+    @apply flex-col gap-4;
   }
-
   #footer .copy_wrapper .copy_msg {
-    text-align: center;
+    @apply text-center;
     font-size: 12px;
     line-height: 1.2;
   }
