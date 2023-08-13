@@ -1,0 +1,324 @@
+:root {
+  --var: 2280px;
+  --var1: -2280px;
+  --bottom: 330px;
+  --bottom2: 30px;
+  --bottom3: 650px;
+  --bottom4: 350px;
+  --time: 10s;
+}
+
+@font-face {
+  font-family: ClashDisplay-Bold;
+  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff) format("woff");
+}
+.common_sub_title {
+  @apply text-dark-2 font-medium mb-6;
+  font-family: Archivo, serif;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+}
+
+.common_title {
+  font-family: ClashDisplay-Bold, Arial, serif;
+  font-size: 40px;
+  line-height: 52px;
+  @apply text-secondary font-semibold mb-10;
+}
+
+#lending_hero {
+  padding: 100px 0;
+  @apply relative overflow-hidden bg-light-2;
+}
+#lending_hero .floating_text {
+  @apply absolute left-0 w-full uppercase text-transparent font-semibold z-50;
+  bottom: 0;
+  transform: rotate(-8deg);
+  font-size: 88px;
+  line-height: 1;
+  -webkit-text-stroke: 1px #2B63C3;
+  white-space: nowrap;
+}
+#lending_hero .floating_text_1 {
+  animation: moving linear var(--time) infinite;
+}
+#lending_hero .floating_text_2 {
+  left: var(--var);
+  animation: moving-2 linear var(--time) infinite;
+}
+#lending_hero .hero_wrapper {
+  @apply grid grid-cols-2 gap-6;
+}
+#lending_hero .hero_wrapper .content_wrapper .common_disc {
+  @apply text-dark mb-10;
+  font-size: 24px;
+  line-height: 36px;
+}
+#lending_hero .hero_wrapper .content_wrapper .btn_wrapper {
+  @apply justify-start;
+}
+#lending_hero .hero_wrapper .hero_img_wrapper {
+  @apply relative;
+}
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+  @apply absolute left-0 bg-green/90 rounded-full p-2 cursor-pointer;
+  top: 48.5%;
+}
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper:hover .rotating_img_wrapper .arrow_wrapper img {
+  transform: scale(1.4);
+}
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+  width: 145px;
+  animation: rotating 8s linear infinite;
+}
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper {
+  @apply relative;
+}
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper {
+  @apply absolute left-1/2 top-1/2 w-4/5 h-4/5 rounded-full bg-green flex justify-center items-center;
+  transform: translate(-50%, -50%);
+}
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+  width: 88px;
+  height: 88px;
+  @apply transition-all duration-300;
+}
+#lending_hero .trust_by {
+  margin-top: 160px;
+}
+#lending_hero .trust_by .trust_title {
+  @apply text-center font-semibold mb-10;
+  font-size: 48px;
+  line-height: 52px;
+}
+#lending_hero .trust_by .img_wrapper {
+  @apply flex items-center justify-between;
+}
+#lending_hero .trust_by .img_wrapper .img {
+  @apply h-10;
+}
+#lending_hero .trust_by .img_wrapper .img img {
+  @apply w-auto h-full;
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --bottom: 280px;
+    --bottom2: -35px;
+    --bottom3: 605px;
+    --bottom4: 280px;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    top: min(44.5%, 209px);
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 125px;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 72px;
+    height: 72px;
+  }
+  #lending_hero .trust_by {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 1200px) {
+  :root {
+    --var: 1575px;
+    --var1: -1575px;
+    --time: 8s;
+    --bottom: 320px;
+    --bottom2: 100px;
+    --bottom3: 540px;
+    --bottom4: 320px;
+  }
+  .common_sub_title {
+    @apply mb-4;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .common_title {
+    font-size: 36px;
+    line-height: 42px;
+    @apply mb-6;
+  }
+  #lending_hero {
+    padding: 80px 0;
+  }
+  #lending_hero .floating_text {
+    font-size: 60px;
+    @apply font-bold;
+  }
+  #lending_hero .hero_wrapper {
+    @apply gap-4;
+  }
+  #lending_hero .hero_wrapper .content_wrapper .common_disc {
+    @apply mb-6;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    top: min(47%, 165px);
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 105px;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 60px;
+    height: 60px;
+  }
+  #lending_hero .trust_by .trust_title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  #lending_hero .trust_by .img_wrapper {
+    @apply gap-x-40 gap-y-8 flex-wrap;
+  }
+}
+@media (max-width: 992px) {
+  :root {
+    --bottom: 920px;
+    --bottom2: 700px;
+    --bottom3: 1140px;
+    --bottom4: 920px;
+  }
+  #lending_hero {
+    padding: 64px 0;
+  }
+  #lending_hero .hero_wrapper {
+    @apply grid-cols-1 gap-10;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    top: 48.5%;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 160px;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 88px;
+    height: 88px;
+  }
+  #lending_hero .trust_by {
+    @apply mt-20;
+  }
+  #lending_hero .trust_by .trust_title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  #lending_hero .trust_by .img_wrapper {
+    @apply gap-x-16;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --time: 7s;
+    --bottom: 750px;
+    --bottom2: 530px;
+    --bottom3: 980px;
+    --bottom4: 750px;
+  }
+  .common_sub_title {
+    @apply mb-2;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .common_title {
+    font-size: 32px;
+    line-height: 38px;
+    @apply mb-4;
+  }
+  #lending_hero .hero_wrapper .content_wrapper .common_disc {
+    @apply mb-6;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 120px;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 72px;
+    height: 72px;
+  }
+  #lending_hero .trust_by .trust_title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  #lending_hero .trust_by .img_wrapper {
+    @apply gap-x-10 gap-y-6;
+  }
+  #lending_hero .trust_by .img_wrapper .img {
+    @apply h-8;
+  }
+}
+@media (max-width: 579px) {
+  :root {
+    --var: 1035px;
+    --var1: -1035px;
+    --time: 6s;
+    --bottom: 420px;
+    --bottom2: 275px;
+    --bottom3: 570px;
+    --bottom4: 420px;
+  }
+  .common_title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  #lending_hero {
+    padding: 48px 0;
+  }
+  #lending_hero .floating_text {
+    font-size: 40px;
+    font-weight: 500;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    @apply p-1;
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: min(120px, 21vw);
+  }
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: min(80px, 17vw);
+    height: min(80px, 17vw);
+  }
+  #lending_hero .trust_by .img_wrapper {
+    @apply gap-y-4;
+  }
+  #lending_hero .trust_by .img_wrapper .img {
+    @apply h-8 w-full;
+  }
+  #lending_hero .trust_by .img_wrapper .img img {
+    @apply mx-auto;
+  }
+}
+@keyframes moving {
+  0% {
+    transform: translateX(0) rotate(-8deg);
+    bottom: var(--bottom);
+  }
+  100% {
+    transform: translateX(var(--var1)) rotate(-8deg);
+    bottom: var(--bottom2);
+  }
+}
+@keyframes moving-2 {
+  0% {
+    transform: translateX(0) rotate(-8deg);
+    bottom: var(--bottom3);
+  }
+  100% {
+    transform: translateX(var(--var1)) rotate(-8deg);
+    bottom: var(--bottom4);
+  }
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

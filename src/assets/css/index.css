@@ -1,0 +1,444 @@
+:root {
+  --var: 2280px;
+  --var1: -2280px;
+  --bottom: 330px;
+  --bottom2: 30px;
+  --bottom3: 650px;
+  --bottom4: 350px;
+  --time: 10s;
+}
+
+@font-face {
+  font-family: ClashDisplay-Bold;
+
+  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff) format("woff");
+}
+
+.common_sub_title {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(23 33 56 / var(--tw-text-opacity));
+  font-family: Archivo, serif;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+}
+
+.common_title {
+  font-family: ClashDisplay-Bold, Arial, serif;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(4 18 45 / var(--tw-text-opacity));
+}
+
+#lending_hero {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 248 254 / var(--tw-bg-opacity));
+}
+
+#lending_hero .floating_text {
+  position: absolute;
+  left: 0px;
+  z-index: 50;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: transparent;
+  bottom: 0;
+  transform: rotate(-8deg);
+  font-size: 88px;
+  line-height: 1;
+  -webkit-text-stroke: 1px #2B63C3;
+  white-space: nowrap;
+}
+
+#lending_hero .floating_text_1 {
+  animation: moving linear var(--time) infinite;
+}
+
+#lending_hero .floating_text_2 {
+  left: var(--var);
+  animation: moving-2 linear var(--time) infinite;
+}
+
+#lending_hero .hero_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+#lending_hero .hero_wrapper .content_wrapper .common_disc {
+  margin-bottom: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(74 81 104 / var(--tw-text-opacity));
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#lending_hero .hero_wrapper .content_wrapper .btn_wrapper {
+  justify-content: flex-start;
+}
+
+#lending_hero .hero_wrapper .hero_img_wrapper {
+  position: relative;
+}
+
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+  border-radius: 9999px;
+  background-color: rgb(9 195 86 / 0.9);
+  padding: 0.5rem;
+  top: 48.5%;
+}
+
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper:hover .rotating_img_wrapper .arrow_wrapper img {
+  transform: scale(1.4);
+}
+
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+  width: 145px;
+  animation: rotating 8s linear infinite;
+}
+
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper {
+  position: relative;
+}
+
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  height: 80%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 195 86 / var(--tw-bg-opacity));
+  transform: translate(-50%, -50%);
+}
+
+#lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+  width: 88px;
+  height: 88px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+#lending_hero .trust_by {
+  margin-top: 160px;
+}
+
+#lending_hero .trust_by .trust_title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+}
+
+#lending_hero .trust_by .img_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#lending_hero .trust_by .img_wrapper .img {
+  height: 2.5rem;
+}
+
+#lending_hero .trust_by .img_wrapper .img img {
+  height: 100%;
+  width: auto;
+}
+
+@media (max-width: 1440px) {
+  :root {
+    --bottom: 280px;
+    --bottom2: -35px;
+    --bottom3: 605px;
+    --bottom4: 280px;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    top: min(44.5%, 209px);
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 125px;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 72px;
+    height: 72px;
+  }
+
+  #lending_hero .trust_by {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --var: 1575px;
+    --var1: -1575px;
+    --time: 8s;
+    --bottom: 320px;
+    --bottom2: 100px;
+    --bottom3: 540px;
+    --bottom4: 320px;
+  }
+
+  .common_sub_title {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .common_title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 1.5rem;
+  }
+
+  #lending_hero {
+    padding: 80px 0;
+  }
+
+  #lending_hero .floating_text {
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  #lending_hero .hero_wrapper {
+    gap: 1rem;
+  }
+
+  #lending_hero .hero_wrapper .content_wrapper .common_disc {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    top: min(47%, 165px);
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 105px;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #lending_hero .trust_by .trust_title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  #lending_hero .trust_by .img_wrapper {
+    flex-wrap: wrap;
+    -moz-column-gap: 10rem;
+         column-gap: 10rem;
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --bottom: 920px;
+    --bottom2: 700px;
+    --bottom3: 1140px;
+    --bottom4: 920px;
+  }
+
+  #lending_hero {
+    padding: 64px 0;
+  }
+
+  #lending_hero .hero_wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.5rem;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    top: 48.5%;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 160px;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 88px;
+    height: 88px;
+  }
+
+  #lending_hero .trust_by {
+    margin-top: 5rem;
+  }
+
+  #lending_hero .trust_by .trust_title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  #lending_hero .trust_by .img_wrapper {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --time: 7s;
+    --bottom: 750px;
+    --bottom2: 530px;
+    --bottom3: 980px;
+    --bottom4: 750px;
+  }
+
+  .common_sub_title {
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .common_title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 1rem;
+  }
+
+  #lending_hero .hero_wrapper .content_wrapper .common_disc {
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: 120px;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: 72px;
+    height: 72px;
+  }
+
+  #lending_hero .trust_by .trust_title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #lending_hero .trust_by .img_wrapper {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+    row-gap: 1.5rem;
+  }
+
+  #lending_hero .trust_by .img_wrapper .img {
+    height: 2rem;
+  }
+}
+
+@media (max-width: 579px) {
+  :root {
+    --var: 1035px;
+    --var1: -1035px;
+    --time: 6s;
+    --bottom: 420px;
+    --bottom2: 275px;
+    --bottom3: 570px;
+    --bottom4: 420px;
+  }
+
+  .common_title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  #lending_hero {
+    padding: 48px 0;
+  }
+
+  #lending_hero .floating_text {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
+    padding: 0.25rem;
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img {
+    width: min(120px, 21vw);
+  }
+
+  #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper .rotating_img_wrapper .arrow_wrapper img {
+    width: min(80px, 17vw);
+    height: min(80px, 17vw);
+  }
+
+  #lending_hero .trust_by .img_wrapper {
+    row-gap: 1rem;
+  }
+
+  #lending_hero .trust_by .img_wrapper .img {
+    height: 2rem;
+    width: 100%;
+  }
+
+  #lending_hero .trust_by .img_wrapper .img img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateX(0) rotate(-8deg);
+    bottom: var(--bottom);
+  }
+
+  100% {
+    transform: translateX(var(--var1)) rotate(-8deg);
+    bottom: var(--bottom2);
+  }
+}
+
+@keyframes moving-2 {
+  0% {
+    transform: translateX(0) rotate(-8deg);
+    bottom: var(--bottom3);
+  }
+
+  100% {
+    transform: translateX(var(--var1)) rotate(-8deg);
+    bottom: var(--bottom4);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
