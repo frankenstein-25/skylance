@@ -17,6 +17,7 @@
 .common_sub_title {
   margin-bottom: 1.5rem;
   font-weight: 500;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(23 33 56 / var(--tw-text-opacity));
   font-family: Archivo, serif;
@@ -33,6 +34,12 @@
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(4 18 45 / var(--tw-text-opacity));
+}
+
+.common_title span {
+  --tw-text-opacity: 1;
+  color: rgb(43 99 195 / var(--tw-text-opacity));
+  font-family: ClashDisplay-Bold, Arial, serif;
 }
 
 #lending_hero {
@@ -163,6 +170,53 @@
   width: auto;
 }
 
+#about {
+  padding: 100px 0;
+}
+
+#about .about_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+#about .about_wrapper .common_disc {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(74 81 104 / var(--tw-text-opacity));
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#about .about_wrapper .btn_wrapper {
+  justify-content: flex-start;
+}
+
+#about .about_wrapper .btn_wrapper .big_btn[variant=blank] {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.25rem;
+  border-style: none;
+  background-color: transparent;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(43 99 195 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+#about .about_wrapper .btn_wrapper .big_btn[variant=blank]:hover {
+  gap: 0.5rem;
+  text-decoration-line: underline;
+}
+
 @media (max-width: 1440px) {
   :root {
     --bottom: 280px;
@@ -255,6 +309,30 @@
          column-gap: 10rem;
     row-gap: 2rem;
   }
+
+  #about {
+    padding: 80px 0;
+  }
+
+  #about .about_wrapper {
+    gap: 1rem;
+  }
+
+  #about .about_wrapper .common_disc {
+    margin-bottom: 1.5rem;
+    gap: 1.5rem;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] .arrow_wrapper {
+    width: 1.25rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -299,6 +377,15 @@
   #lending_hero .trust_by .img_wrapper {
     -moz-column-gap: 4rem;
          column-gap: 4rem;
+  }
+
+  #about {
+    padding: 64px 0;
+  }
+
+  #about .about_wrapper {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.5rem;
   }
 }
 
@@ -352,6 +439,21 @@
   #lending_hero .trust_by .img_wrapper .img {
     height: 2rem;
   }
+
+  #about .about_wrapper .common_disc {
+    gap: 1rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] .arrow_wrapper {
+    width: 1rem;
+  }
 }
 
 @media (max-width: 579px) {
@@ -404,6 +506,10 @@
   #lending_hero .trust_by .img_wrapper .img img {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #about {
+    padding: 48px 0;
   }
 }
 

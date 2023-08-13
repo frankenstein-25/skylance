@@ -7,23 +7,30 @@
   --bottom4: 350px;
   --time: 10s;
 }
+
 @font-face {
   font-family: ClashDisplay-Bold;
   src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff) format("woff");
 }
 
 .common_sub_title {
-  @apply text-dark-2 font-medium mb-6;
+  @apply text-dark-2 font-medium mb-6 uppercase;
   font-family: Archivo, serif;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.04em;
 }
+
 .common_title {
   font-family: ClashDisplay-Bold, Arial, serif;
   font-size: 40px;
   line-height: 52px;
   @apply text-secondary font-semibold mb-10;
+
+  span {
+    @apply text-primary;
+    font-family: ClashDisplay-Bold, Arial, serif;
+  }
 }
 
 #lending_hero {
@@ -38,13 +45,16 @@
     -webkit-text-stroke: 1px #2B63C3;
     white-space: nowrap;
   }
+
   .floating_text_1 {
     animation: moving linear var(--time) infinite;
   }
+
   .floating_text_2 {
     left: var(--var);
     animation: moving-2 linear var(--time) infinite;
   }
+
   .hero_wrapper {
     @apply grid grid-cols-2 gap-6;
     .content_wrapper {
@@ -96,6 +106,7 @@
       }
     }
   }
+
   .trust_by {
     margin-top: 160px;
 
@@ -114,6 +125,33 @@
         }
       }
     }
+  }
+}
+
+#about {
+  padding: 100px 0;
+
+  .about_wrapper {
+    @apply grid grid-cols-2 gap-6;
+    .common_disc {
+      @apply text-dark mb-10 flex flex-col gap-10;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .btn_wrapper {
+      @apply justify-start;
+      .big_btn[variant='blank'] {
+        @apply bg-transparent border-none flex gap-1 font-semibold items-center text-primary transition-all duration-300 cursor-pointer;
+        font-size: 24px;
+        line-height: 26px;
+
+        &:hover {
+          @apply underline gap-2;
+        }
+      }
+    }
+
   }
 }
 
@@ -145,6 +183,7 @@
         }
       }
     }
+
     .trust_by {
       margin-top: 120px;
     }
@@ -173,10 +212,12 @@
   }
   #lending_hero {
     padding: 80px 0;
+
     .floating_text {
       font-size: 60px;
       @apply font-bold;
     }
+
     .hero_wrapper {
       @apply gap-4;
       .content_wrapper {
@@ -206,13 +247,38 @@
         }
       }
     }
+
     .trust_by {
       .trust_title {
         font-size: 42px;
         line-height: 46px;
       }
+
       .img_wrapper {
         @apply gap-x-40 gap-y-8 flex-wrap;
+      }
+    }
+  }
+  #about {
+    padding: 80px 0;
+
+    .about_wrapper {
+      @apply gap-4;
+      .common_disc {
+        @apply mb-6 gap-6;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .btn_wrapper {
+        .big_btn[variant='blank'] {
+          font-size: 20px;
+          line-height: 26px;
+
+          .arrow_wrapper {
+            @apply w-5;
+          }
+        }
       }
     }
   }
@@ -227,6 +293,7 @@
   }
   #lending_hero {
     padding: 64px 0;
+
     .hero_wrapper {
       @apply grid-cols-1 gap-10;
       .hero_img_wrapper {
@@ -248,15 +315,24 @@
         }
       }
     }
+
     .trust_by {
       @apply mt-20;
       .trust_title {
         font-size: 36px;
         line-height: 42px;
       }
+
       .img_wrapper {
         @apply gap-x-16;
       }
+    }
+  }
+  #about {
+    padding: 64px 0;
+
+    .about_wrapper {
+      @apply grid-cols-1 gap-10;
     }
   }
 }
@@ -306,6 +382,7 @@
         }
       }
     }
+
     .trust_by {
       .trust_title {
         font-size: 32px;
@@ -320,6 +397,27 @@
       }
     }
   }
+  #about {
+    .about_wrapper {
+      .common_disc {
+        @apply gap-4;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .btn_wrapper {
+        .big_btn[variant='blank'] {
+          font-size: 16px;
+          line-height: 26px;
+
+          .arrow_wrapper {
+            @apply w-4;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: 579px) {
@@ -338,10 +436,12 @@
   }
   #lending_hero {
     padding: 48px 0;
+
     .floating_text {
       font-size: 40px;
       font-weight: 500;
     }
+
     .hero_wrapper {
       .hero_img_wrapper {
         .rotating_link_wrapper {
@@ -361,6 +461,7 @@
         }
       }
     }
+
     .trust_by {
       .img_wrapper {
         @apply gap-y-4;
@@ -373,6 +474,10 @@
       }
     }
   }
+  #about {
+    padding: 48px 0;
+  }
+
 }
 
 @keyframes moving {

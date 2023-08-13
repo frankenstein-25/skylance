@@ -13,7 +13,7 @@
   src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff) format("woff");
 }
 .common_sub_title {
-  @apply text-dark-2 font-medium mb-6;
+  @apply text-dark-2 font-medium mb-6 uppercase;
   font-family: Archivo, serif;
   font-size: 20px;
   line-height: 22px;
@@ -25,6 +25,10 @@
   font-size: 40px;
   line-height: 52px;
   @apply text-secondary font-semibold mb-10;
+}
+.common_title span {
+  @apply text-primary;
+  font-family: ClashDisplay-Bold, Arial, serif;
 }
 
 #lending_hero {
@@ -102,6 +106,29 @@
   @apply w-auto h-full;
 }
 
+#about {
+  padding: 100px 0;
+}
+#about .about_wrapper {
+  @apply grid grid-cols-2 gap-6;
+}
+#about .about_wrapper .common_disc {
+  @apply text-dark mb-10 flex flex-col gap-10;
+  font-size: 24px;
+  line-height: 36px;
+}
+#about .about_wrapper .btn_wrapper {
+  @apply justify-start;
+}
+#about .about_wrapper .btn_wrapper .big_btn[variant=blank] {
+  @apply bg-transparent border-none flex gap-1 font-semibold items-center text-primary transition-all duration-300 cursor-pointer;
+  font-size: 24px;
+  line-height: 26px;
+}
+#about .about_wrapper .btn_wrapper .big_btn[variant=blank]:hover {
+  @apply underline gap-2;
+}
+
 @media (max-width: 1440px) {
   :root {
     --bottom: 280px;
@@ -175,6 +202,24 @@
   #lending_hero .trust_by .img_wrapper {
     @apply gap-x-40 gap-y-8 flex-wrap;
   }
+  #about {
+    padding: 80px 0;
+  }
+  #about .about_wrapper {
+    @apply gap-4;
+  }
+  #about .about_wrapper .common_disc {
+    @apply mb-6 gap-6;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] .arrow_wrapper {
+    @apply w-5;
+  }
 }
 @media (max-width: 992px) {
   :root {
@@ -208,6 +253,12 @@
   }
   #lending_hero .trust_by .img_wrapper {
     @apply gap-x-16;
+  }
+  #about {
+    padding: 64px 0;
+  }
+  #about .about_wrapper {
+    @apply grid-cols-1 gap-10;
   }
 }
 @media (max-width: 768px) {
@@ -250,6 +301,18 @@
   #lending_hero .trust_by .img_wrapper .img {
     @apply h-8;
   }
+  #about .about_wrapper .common_disc {
+    @apply gap-4;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #about .about_wrapper .btn_wrapper .big_btn[variant=blank] .arrow_wrapper {
+    @apply w-4;
+  }
 }
 @media (max-width: 579px) {
   :root {
@@ -290,6 +353,9 @@
   }
   #lending_hero .trust_by .img_wrapper .img img {
     @apply mx-auto;
+  }
+  #about {
+    padding: 48px 0;
   }
 }
 @keyframes moving {
