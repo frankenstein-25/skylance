@@ -55,5 +55,12 @@
     max-width: 100%;
   }
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full;
+}
 
 /*# sourceMappingURL=common.css.map */

@@ -3,12 +3,12 @@
 }
 
 .header_container {
-  @apply w-full h-auto top-0 fixed bg-white;
-  z-index: 1;
+  @apply w-full h-auto top-0 fixed bg-light-2;
+  z-index: 999;
 }
 
 .header_wrapper {
-  @apply p-6 flex justify-between items-center  gap-12;
+  @apply py-6 flex justify-between items-center  gap-12;
 }
 .header_wrapper .logo_wrapper {
   @apply w-full;

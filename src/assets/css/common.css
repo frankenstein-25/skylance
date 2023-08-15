@@ -81,4 +81,13 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 9999px;
+  background-color: rgb(43 99 195 / 0.5);
+}
+
 /*# sourceMappingURL=common.css.map */

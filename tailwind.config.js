@@ -13,11 +13,13 @@ module.exports = {
                 },
                 "dark": {
                     DEFAULT: "#4A5168",
-                    2: '#172138'
+                    2: '#172138',
+                    3:'#4F5569'
                 },
                 "light": {
                     DEFAULT: "#c381db0f",
-                    2:'#F6F8FE'
+                    2:'#F6F8FE',
+                    3:'#e6F8FE'
                 },
                 "green": {
                     DEFAULT: '#09C356'
