@@ -173,12 +173,54 @@
 #service .service_wrapper .content_wrapper .content .heading .arrow_wrapper {
   @apply w-8  transition-all duration-500;
 }
+#service .service_wrapper .content_wrapper .content .disc {
+  @apply hidden;
+}
+#service .service_wrapper .content_wrapper .content .disc .details {
+  @apply text-left text-light-3 font-normal mt-10 mb-8;
+  font-size: 18px;
+  line-height: 24px;
+}
+#service .service_wrapper .content_wrapper .content .disc .list {
+  @apply flex flex-col gap-5;
+}
+#service .service_wrapper .content_wrapper .content .disc .list li {
+  @apply flex gap-2.5 items-center;
+}
+#service .service_wrapper .content_wrapper .content .disc .list li .name {
+  @apply font-medium text-light-4;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  word-spacing: -1px;
+  letter-spacing: -0.4px;
+}
+#service .service_wrapper .content_wrapper .content .disc .list li .icon {
+  @apply flex justify-center items-center;
+}
+#service .service_wrapper .content_wrapper .content .disc .list li .arrow-icon {
+  @apply w-4;
+}
+#service .service_wrapper .content_wrapper .content .disc .list li:hover {
+  cursor: context-menu;
+}
+#service .service_wrapper .content_wrapper .content .disc .list li:hover .icon {
+  stroke-width: 0.4px;
+  @apply stroke-primary;
+}
+#service .service_wrapper .content_wrapper .content .disc .list li:hover .name {
+  @apply text-primary;
+}
 #service .service_wrapper .content_wrapper .content:hover {
-  @apply bg-light-3;
+  @apply bg-light;
 }
 #service .service_wrapper .content_wrapper .content:hover .heading .arrow_wrapper {
   @apply opacity-0;
   transform: translateX(-100%);
+}
+#service .service_wrapper .content_wrapper .content:hover .disc {
+  @apply block;
 }
 
 #why {
@@ -516,6 +558,22 @@
     margin-top: -8%;
     margin-bottom: -8%;
   }
+  #service .service_wrapper .content_wrapper .content .disc .details {
+    @apply mt-8 mb-6;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list {
+    @apply gap-4;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li {
+    @apply gap-1.5;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li .name {
+    font-size: 16px;
+    word-spacing: -1px;
+    letter-spacing: -0.4px;
+  }
 }
 @media (max-width: 1200px) {
   :root {
@@ -604,10 +662,27 @@
   }
   #service .service_wrapper .content_wrapper .content .heading .title {
     font-size: 19.92px;
-    line-height: 36px;
+    line-height: 22px;
   }
   #service .service_wrapper .content_wrapper .content .heading .arrow_wrapper {
     @apply w-6;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .details {
+    @apply mt-4 mb-3;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list {
+    @apply gap-2;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li {
+    @apply gap-1.5;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li .name {
+    font-size: 15px;
+    word-spacing: -1px;
+    letter-spacing: -0.4px;
+    word-break: break-word;
   }
   #why {
     padding: 80px 0;
@@ -829,6 +904,23 @@
   #service .service_wrapper .content_wrapper .content .heading .arrow_wrapper {
     @apply w-8;
   }
+  #service .service_wrapper .content_wrapper .content .disc .details {
+    @apply mt-10 mb-8;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list {
+    @apply gap-4;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li {
+    @apply gap-2;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li .name {
+    font-size: 16px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
+    word-break: break-word;
+  }
   #why {
     padding: 64px 0;
   }
@@ -922,6 +1014,11 @@
     @apply col-span-2;
     height: 400.5px;
   }
+  #strength .content_wrapper .content.last-circle {
+    @apply col-start-2;
+    margin-top: -20% !important;
+    margin-left: -3%;
+  }
   #strength .content_wrapper .content .bg-img {
     @apply w-48;
   }
@@ -1012,6 +1109,23 @@
   }
   #service .service_wrapper .content_wrapper .content .heading .arrow_wrapper {
     @apply w-6;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .details {
+    @apply mt-6 mb-4;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list {
+    @apply gap-3;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li {
+    @apply gap-1.5;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li .name {
+    font-size: 15px;
+    word-spacing: -1px;
+    letter-spacing: -0.4px;
+    word-break: break-word;
   }
   #why .why_wrapper .content_wrapper {
     @apply col-span-full;
@@ -1107,6 +1221,11 @@
   #strength .content_wrapper .content:not(:first-of-type) {
     margin-top: -7%;
   }
+  #strength .content_wrapper .content.last-circle {
+    @apply col-start-1;
+    margin: 0 auto;
+    margin-top: -7% !important;
+  }
 }
 @media (max-width: 579px) {
   :root {
@@ -1118,9 +1237,13 @@
     --bottom3: 570px;
     --bottom4: 420px;
   }
+  .common_sub_title {
+    text-align: center;
+  }
   .common_title {
     font-size: 28px;
     line-height: 32px;
+    text-align: center;
   }
   #lending_hero {
     padding: 48px 0;
@@ -1128,6 +1251,12 @@
   #lending_hero .floating_text {
     font-size: 40px;
     font-weight: 500;
+  }
+  #lending_hero .hero_wrapper .content_wrapper .common_disc {
+    @apply text-center;
+  }
+  #lending_hero .hero_wrapper .content_wrapper .btn_wrapper {
+    justify-content: center;
   }
   #lending_hero .hero_wrapper .hero_img_wrapper .rotating_link_wrapper {
     @apply p-1;
@@ -1151,6 +1280,12 @@
   #about {
     padding: 48px 0;
   }
+  #about .about_wrapper .common_disc {
+    text-align: center;
+  }
+  #about .about_wrapper .btn_wrapper {
+    justify-content: center;
+  }
   #service {
     padding: 48px 0;
   }
@@ -1164,8 +1299,18 @@
   #service .service_wrapper .content_wrapper .content .heading .title {
     font-size: 20px;
   }
+  #service .service_wrapper .content_wrapper .content .disc .list li {
+    @apply gap-2;
+  }
+  #service .service_wrapper .content_wrapper .content .disc .list li .name {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+  }
   #why {
     padding: 48px 0;
+  }
+  #why .btn_wrapper {
+    justify-content: center;
   }
   #why .disc_wrapper .disc .num {
     font-size: 20px;

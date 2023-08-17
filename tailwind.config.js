@@ -17,9 +17,10 @@ module.exports = {
                     3:'#4F5569'
                 },
                 "light": {
-                    DEFAULT: "#c381db0f",
+                    DEFAULT: "#F2F2F2",
                     2:'#F6F8FE',
-                    3:'#e6F8FE'
+                    3:'#333333',
+                    4:'#7E7E7E'
                 },
                 "green": {
                     DEFAULT: '#09C356'
