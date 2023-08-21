@@ -2,6 +2,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@font-face {
+  font-family: ClashDisplay-Bold;
+
+  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: ClashDisplay-Medium;
+
+  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff) format("woff");
+}
+
 *{
   margin: 0px;
   scroll-behavior: smooth;

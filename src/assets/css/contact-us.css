@@ -1,0 +1,397 @@
+#form {
+  padding: 100px 0;
+  position: relative;
+  background: white;
+}
+
+#form .title {
+  font-family: "ClashDisplay-Bold";
+  font-size: 40px;
+  line-height: 56px;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(4 18 45 / var(--tw-text-opacity));
+}
+
+#form .disc {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(74 81 104 / var(--tw-text-opacity));
+  max-width: 860px;
+}
+
+#form .form_content {
+  border: 1px solid;
+  border-color: rgb(79 85 105 / 0.2);
+  padding: 2.5rem;
+  border-radius: 40px;
+}
+
+#form .form_wrapper label {
+  font-family: "ClashDisplay-Bold";
+  font-size: 16px;
+  line-height: 21px;
+  --tw-text-opacity: 1;
+  color: rgb(4 18 45 / var(--tw-text-opacity));
+}
+
+#form .form_wrapper input {
+  height: 56px;
+  border: 1px solid;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(153 153 153 / var(--tw-border-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+  outline-width: 0px;
+  font-size: 18px;
+}
+
+#form .form_wrapper input:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(43 99 195 / var(--tw-border-opacity));
+}
+
+#form .form_wrapper input::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+#form .form_wrapper input::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+#form .form_wrapper .top {
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+#form .form_wrapper .top .left, #form .form_wrapper .top .right {
+  display: flex;
+  flex-direction: column;
+}
+
+#form .form_wrapper .bottom {
+  margin-top: 1.5rem;
+}
+
+#form .form_wrapper .bottom textarea {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+  outline-width: 0px;
+  font-size: 18px;
+}
+
+#form .form_wrapper .bottom textarea:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(43 99 195 / var(--tw-border-opacity));
+}
+
+#form .form_wrapper .bottom textarea::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+#form .form_wrapper .bottom textarea::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+#form .form_wrapper .btn_wrapper {
+  margin-top: 2.5rem;
+}
+
+#form .form_wrapper .btn_wrapper .btn[variant=primary] {
+  border-radius: 9999px;
+}
+
+#form .content {
+  box-shadow: 0 0 40px 0 rgba(9, 19, 33, 0.1215686275);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 248 254 / var(--tw-bg-opacity));
+  padding: 2.5rem;
+  padding-top: 3.5rem;
+}
+
+#form .content .content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+#form .content .content-grid .content_wrapper {
+  border: 1px solid;
+  border-radius: 1.5rem;
+  border-color: rgb(79 85 105 / 0.4);
+  padding: 2.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+#form .content .content-grid .content_wrapper .icon_wrapper {
+  margin-bottom: 2.5rem;
+  width: 4rem;
+}
+
+#form .content .content-grid .content_wrapper .title {
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+#form .content .content-grid .content_wrapper .disc {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#form .content .content-grid .content_wrapper .email_add {
+  font-family: "ClashDisplay-Bold";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(43 99 195 / var(--tw-text-opacity));
+}
+
+#form .content .content-grid .content_wrapper:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.0862745098);
+}
+
+@media (max-width: 1400px) {
+  #form .content {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #form {
+    padding: 80px 0;
+  }
+
+  #form .title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  #form .content {
+    max-width: 880px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+  }
+
+  #form .content .content-grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  #form .content .content-grid .content_wrapper .icon_wrapper {
+    margin-bottom: 2rem;
+  }
+
+  #form .content .content-grid .content_wrapper .title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  #form .content .content-grid .content_wrapper .disc {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #form {
+    padding: 64px 0;
+  }
+
+  #form .title {
+    font-size: 32px;
+    line-height: 36px;
+    padding-bottom: 0.5rem;
+  }
+
+  #form .content {
+    max-width: 660px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+
+  #form .content .content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #form .content .content-grid .content_wrapper {
+    grid-column: span 2 / span 2;
+  }
+
+  #form .content .content-grid .content_wrapper .icon_wrapper {
+    margin-bottom: 2rem;
+    width: 3.5rem;
+  }
+
+  #form .content .content-grid .content_wrapper .title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  #form .content .content-grid .content_wrapper .disc {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  #form .content .content-grid .c-3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  #form .content {
+    max-width: 480px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+  }
+
+  #form .content .content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #form .content .content-grid .content_wrapper {
+    padding: 1.5rem;
+  }
+
+  #form .content .content-grid .content_wrapper .icon_wrapper {
+    margin-bottom: 1.75rem;
+    width: 3rem;
+  }
+
+  #form .content .content-grid .content_wrapper .title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #form .content .content-grid .c-3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 568px) {
+  #form .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  #form .form_content {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  #form .form_wrapper label {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  #form .form_wrapper input {
+    height: 48px;
+    margin-top: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+  }
+
+  #form .form_wrapper .top {
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  #form .form_wrapper .bottom {
+    margin-top: 1rem;
+  }
+
+  #form .form_wrapper .bottom textarea {
+    margin-top: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 16px;
+  }
+
+  #form .form_wrapper .btn_wrapper {
+    margin-top: 1.5rem;
+  }
+
+  #form .content {
+    max-width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 24px;
+  }
+
+  #form .content .content-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #form .content .content-grid .content_wrapper {
+    padding: 1.5rem;
+  }
+
+  #form .content .content-grid .content_wrapper .icon_wrapper {
+    margin-bottom: 1.75rem;
+    width: 3rem;
+  }
+
+  #form .content .content-grid .content_wrapper .title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #form .content .content-grid .c-3 {
+    grid-column-start: 1;
+  }
+}
+
+/*# sourceMappingURL=contact-us.css.map */

@@ -20,7 +20,8 @@ module.exports = {
                     DEFAULT: "#F2F2F2",
                     2:'#F6F8FE',
                     3:'#333333',
-                    4:'#7E7E7E'
+                    4:'#7E7E7E',
+                    5:'#999999'
                 },
                 "green": {
                     DEFAULT: '#09C356'

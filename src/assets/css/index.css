@@ -8,17 +8,7 @@
   --time: 10s;
 }
 
-@font-face {
-  font-family: ClashDisplay-Bold;
 
-  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff) format("woff");
-}
-
-@font-face {
-  font-family: ClashDisplay-Medium;
-
-  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff) format("woff");
-}
 
 .common_sub_title {
   margin-bottom: 1.5rem;
