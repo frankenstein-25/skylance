@@ -1,8 +1,6 @@
 $(document).ready(function () {
   $('.main_slick_wrapper').slick({
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
     speed: 300,
     slidesToShow: 1,
     draggable: true,

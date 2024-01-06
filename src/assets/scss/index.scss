@@ -394,7 +394,7 @@
     @apply gap-2.5 mb-10;
     .big_btn[variant='outline'] {
       border: 1px solid;
-      @apply font-medium text-primary bg-transparent cursor-pointer border-primary rounded-full transition-all duration-300;
+      @apply font-medium text-primary bg-transparent cursor-pointer border-primary rounded-full transition-all duration-300 no-underline;
       padding: 15px 23px;
       font-size: 20px;
       line-height: 24px;
@@ -493,7 +493,7 @@
     }
 
     .slick_wrapper {
-      @apply mx-4;
+      @apply px-4;
       .main_content_wrapper {
         box-shadow: 0 4px 8px 0 #00000008;
         @apply bg-primary  py-10 text-center rounded-3xl;
@@ -577,10 +577,13 @@
 
     .btn_wrapper {
       @apply mt-10 relative;
-      button {
+      .big_btn{
+        @apply block;
+      }
+      a {
         border: 1px solid;
         padding: 15px 39px;
-        @apply rounded-2xl font-semibold;
+        @apply rounded-2xl font-semibold no-underline;
         font-size: 16px;
         line-height: 24px;
       }

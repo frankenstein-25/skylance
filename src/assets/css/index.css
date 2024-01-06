@@ -8,7 +8,17 @@
   --time: 10s;
 }
 
+@font-face {
+  font-family: ClashDisplay-Bold;
 
+  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: ClashDisplay-Medium;
+
+  src: url(../font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Medium.woff) format("woff");
+}
 
 .common_sub_title {
   margin-bottom: 1.5rem;
@@ -564,6 +574,7 @@
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(43 99 195 / var(--tw-text-opacity));
+  text-decoration-line: none;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -718,8 +729,8 @@
 }
 
 #result .content_wrapper .slick_wrapper {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #result .content_wrapper .slick_wrapper .main_content_wrapper {
@@ -853,11 +864,16 @@
   margin-top: 2.5rem;
 }
 
-#get_in .content_wrapper .btn_wrapper button {
+#get_in .content_wrapper .btn_wrapper .big_btn {
+  display: block;
+}
+
+#get_in .content_wrapper .btn_wrapper a {
   border: 1px solid;
   padding: 15px 39px;
   border-radius: 1rem;
   font-weight: 600;
+  text-decoration-line: none;
   font-size: 16px;
   line-height: 24px;
 }

@@ -332,7 +332,7 @@
 }
 #opening .btn_wrapper .big_btn[variant=outline] {
   border: 1px solid;
-  @apply font-medium text-primary bg-transparent cursor-pointer border-primary rounded-full transition-all duration-300;
+  @apply font-medium text-primary bg-transparent cursor-pointer border-primary rounded-full transition-all duration-300 no-underline;
   padding: 15px 23px;
   font-size: 20px;
   line-height: 24px;
@@ -418,7 +418,7 @@
   @apply pb-10;
 }
 #result .content_wrapper .slick_wrapper {
-  @apply mx-4;
+  @apply px-4;
 }
 #result .content_wrapper .slick_wrapper .main_content_wrapper {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.031372549);
@@ -493,10 +493,13 @@
 #get_in .content_wrapper .btn_wrapper {
   @apply mt-10 relative;
 }
-#get_in .content_wrapper .btn_wrapper button {
+#get_in .content_wrapper .btn_wrapper .big_btn {
+  @apply block;
+}
+#get_in .content_wrapper .btn_wrapper a {
   border: 1px solid;
   padding: 15px 39px;
-  @apply rounded-2xl font-semibold;
+  @apply rounded-2xl font-semibold no-underline;
   font-size: 16px;
   line-height: 24px;
 }
